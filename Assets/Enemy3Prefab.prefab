@@ -94,11 +94,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6467998574560876732}
   - component: {fileID: 1595463982882270711}
-  - component: {fileID: 6803331162143017954}
-  - component: {fileID: 1004053305269602208}
   - component: {fileID: 8369547576193812575}
   - component: {fileID: 6282214587853138950}
   - component: {fileID: 6138307701491886227}
+  - component: {fileID: -1405819865270926571}
+  - component: {fileID: -8750897258792227705}
   m_Layer: 3
   m_Name: Enemy3Prefab
   m_TagString: Enemy
@@ -121,7 +121,7 @@ Transform:
   - {fileID: 5896074429399991487}
   - {fileID: 570191009035945253}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &1595463982882270711
 SpriteRenderer:
@@ -175,36 +175,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6803331162143017954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2336661216029137185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10a95e094f2f01418511b7998dc669d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyenergyPrefab: {fileID: 5078648181228842269, guid: ae221c25491976d40b66f96e021a496f, type: 3}
-  firePoint: {fileID: 5896074429399991487}
-  fireRate: 2
---- !u!114 &1004053305269602208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2336661216029137185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10a95e094f2f01418511b7998dc669d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyenergyPrefab: {fileID: 5078648181228842269, guid: ae221c25491976d40b66f96e021a496f, type: 3}
-  firePoint: {fileID: 570191009035945253}
-  fireRate: 2
 --- !u!114 &8369547576193812575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +238,36 @@ MonoBehaviour:
   moveSpeed: 1
   minDistanceToMove: -2
   maxDistanceToMove: -5
+--- !u!114 &-1405819865270926571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336661216029137185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9614ffc50e375b4b82478946e63ea8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyenergyPrefab: {fileID: 5078648181228842269, guid: ae221c25491976d40b66f96e021a496f, type: 3}
+  firePoint: {fileID: 5896074429399991487}
+  fireRate: 2
+--- !u!114 &-8750897258792227705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336661216029137185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9614ffc50e375b4b82478946e63ea8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyenergyPrefab: {fileID: 5078648181228842269, guid: ae221c25491976d40b66f96e021a496f, type: 3}
+  firePoint: {fileID: 570191009035945253}
+  fireRate: 2
 --- !u!1 &7198251132708226522
 GameObject:
   m_ObjectHideFlags: 0

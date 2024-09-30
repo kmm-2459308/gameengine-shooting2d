@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BOSSHealth : MonoBehaviour
@@ -33,7 +34,8 @@ public class BOSSHealth : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject); // 敵のオブジェクトを削除
+        Destroy(gameObject); // 敵のオブジェクトを削除[
+        SceneManager.LoadScene("ClearScene");
     }
 
     // 体力バーの値を更新するメソッド

@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 9166618567487383550}
   - component: {fileID: 1043852709563486675}
-  - component: {fileID: 5678086979906158604}
   - component: {fileID: 1936255231197004796}
   - component: {fileID: 6904837278606976215}
   - component: {fileID: 2083514046572596063}
   - component: {fileID: 7984122047632322799}
   - component: {fileID: 894628519473165299}
   - component: {fileID: 302443702092791941}
+  - component: {fileID: 5108410680544242743}
   m_Layer: 3
   m_Name: Enemy1Prefab
   m_TagString: Enemy
@@ -38,7 +38,7 @@ Transform:
   m_Children:
   - {fileID: 5583502619964361640}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &1043852709563486675
 SpriteRenderer:
@@ -92,21 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5678086979906158604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867895947238479810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10a95e094f2f01418511b7998dc669d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyenergyPrefab: {fileID: 5078648181228842269, guid: ae221c25491976d40b66f96e021a496f, type: 3}
-  firePoint: {fileID: 5583502619964361640}
-  fireRate: 1
 --- !u!50 &1936255231197004796
 Rigidbody2D:
   serializedVersion: 4
@@ -146,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe70eae897d7d4644b6cd4d9347adc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 15
 --- !u!70 &2083514046572596063
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -267,6 +252,21 @@ MonoBehaviour:
   moveSpeed: 1
   minDistanceToMove: -2
   maxDistanceToMove: -2.5
+--- !u!114 &5108410680544242743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867895947238479810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9614ffc50e375b4b82478946e63ea8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyenergyPrefab: {fileID: 5078648181228842269, guid: ae221c25491976d40b66f96e021a496f, type: 3}
+  firePoint: {fileID: 5583502619964361640}
+  fireRate: 0.5
 --- !u!1 &6457112170247786430
 GameObject:
   m_ObjectHideFlags: 0

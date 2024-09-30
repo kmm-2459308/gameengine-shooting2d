@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2201071088439050450}
   - component: {fileID: -1096302839516271770}
   - component: {fileID: 8246805913861678008}
+  - component: {fileID: -9080218844939304657}
   m_Layer: 0
   m_Name: BOSS_Energy
   m_TagString: Untagged
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRadius: 0.5
-  damageAmount: 15
+  damageAmount: 20
   damageInterval: 1
 --- !u!50 &-1096302839516271770
 Rigidbody2D:
@@ -117,7 +118,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -143,3 +144,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   randomDirectionOffset: 5
+--- !u!114 &-9080218844939304657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076569467404106540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9701bf6d33efd4cb19294c16c3e203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 10000

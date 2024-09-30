@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         // 敵を定期的に出現させるためのコルーチンを開始
-        InvokeRepeating("SpawnEnemy", 0f, spawnInterval);
+        InvokeRepeating("SpawnEnemy", 2f, spawnInterval);
     }
 
     private void SpawnEnemy()
